@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadEditForm()">
+    <h1 id="title" class="text-center">Edit Student</h1><br>
+
+    <div class="container" id="text">
+        
+        <div class="mb-3">
+            <label for="txtFirstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="txtFirstName" placeholder="Enter your first Name">
+        </div>
+
+        <div class="mb-3">
+            <label for="txtLastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="txtLastName" placeholder="Enter your last Name">
+        </div>
+
+        <div class="mb-3">
+            <label for="txtAge" class="form-label">Age</label>
+            <input type="number" class="form-control" id="txtAge" placeholder="Enter your age">
+        </div>
+
+        <div class="mb-3">
+            <label for="txtGrade" class="form-label">Grade</label>
+            <input type="text" class="form-control" id="txtGrade" placeholder="Enter your grade">
+        </div>
+
+        <div class="mb-3">
+            <label for="txaAddress" class="form-label">Address</label>
+            <textarea class="form-control" id="txaAddress" rows="3" placeholder="Enter the address"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="txtEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="txtEmail" placeholder="Enter the email">
+        </div>
+
+        <div class="mb-3">
+            <label for="txtContact" class="form-label">Contact Number</label>
+            <input type="tel" class="form-control" id="txtContact" placeholder="Enter the Contact Number">
+        </div>
+
+        <div class="col-md-6">
+            <label for="image" class="form-label">Image</label>
+            <input type="file" class="form-control" id="image" accept="image/*" placeholder="Upload your image">
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="index.html"><button class="btn btn-dark" id="btn">Back</button></a>
+        <button type="button" class="btn btn-primary" id="btn" onclick="updateStudent()">Update</button>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
